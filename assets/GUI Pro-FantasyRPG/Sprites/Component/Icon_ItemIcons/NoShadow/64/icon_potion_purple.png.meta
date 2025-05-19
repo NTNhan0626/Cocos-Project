@@ -1,0 +1,34 @@
+{
+  "ver": "2.3.3",
+  "uuid": "887bc014-2a60-4e34-a03e-ca83afa466b5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
+  "subMetas": {
+    "icon_potion_purple": {
+      "ver": "1.0.4",
+      "uuid": "02526fcf-c2d3-4564-beb4-2af083b16531",
+      "rawTextureUuid": "887bc014-2a60-4e34-a03e-ca83afa466b5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 8,
+      "trimY": 8,
+      "width": 48,
+      "height": 48,
+      "rawWidth": 64,
+      "rawHeight": 64,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

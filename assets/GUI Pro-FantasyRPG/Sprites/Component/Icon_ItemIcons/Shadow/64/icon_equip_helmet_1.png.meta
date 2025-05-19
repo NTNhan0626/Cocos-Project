@@ -1,0 +1,34 @@
+{
+  "ver": "2.3.3",
+  "uuid": "55b5e042-09ad-409b-b207-dc9071a61839",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
+  "subMetas": {
+    "icon_equip_helmet_1": {
+      "ver": "1.0.4",
+      "uuid": "d4ccb7ef-c5df-4504-80d1-124e82ccf489",
+      "rawTextureUuid": "55b5e042-09ad-409b-b207-dc9071a61839",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 9,
+      "trimY": 8,
+      "width": 46,
+      "height": 50,
+      "rawWidth": 64,
+      "rawHeight": 64,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

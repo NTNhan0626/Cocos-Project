@@ -1,0 +1,34 @@
+{
+  "ver": "2.3.3",
+  "uuid": "95100c2e-05cd-4ed5-8041-89da9cca6fdd",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
+  "subMetas": {
+    "IconSet_Role_Sorcerer": {
+      "ver": "1.0.4",
+      "uuid": "66e48712-cc4e-4421-a561-67a692448694",
+      "rawTextureUuid": "95100c2e-05cd-4ed5-8041-89da9cca6fdd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 80,
+      "height": 91,
+      "rawWidth": 80,
+      "rawHeight": 91,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "ver": "2.3.3",
+  "uuid": "336507e4-61ab-45de-ba33-c80410d7cd45",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
+  "subMetas": {
+    "equip_icon_posion_tooth": {
+      "ver": "1.0.4",
+      "uuid": "5f761d1f-0480-408d-a599-73006a49aa0e",
+      "rawTextureUuid": "336507e4-61ab-45de-ba33-c80410d7cd45",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 12,
+      "trimY": 8,
+      "width": 40,
+      "height": 48,
+      "rawWidth": 64,
+      "rawHeight": 64,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
