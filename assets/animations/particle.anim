@@ -1,0 +1,57 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "particle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            333,
+            612
+          ],
+          "motionPath": []
+        },
+        {
+          "frame": 0.16666666666666666,
+          "value": [
+            461,
+            611
+          ],
+          "motionPath": []
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": [
+            461,
+            702
+          ],
+          "motionPath": []
+        },
+        {
+          "frame": 0.5,
+          "value": [
+            342,
+            701
+          ],
+          "motionPath": []
+        },
+        {
+          "frame": 0.6666666666666666,
+          "value": [
+            342,
+            613
+          ],
+          "motionPath": []
+        }
+      ]
+    }
+  },
+  "events": []
+}

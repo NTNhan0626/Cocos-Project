@@ -1,0 +1,35 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "fire1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 22,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255,
+          "curve": [
+            0.5122641509433964,
+            0.2344863731656185,
+            0.41174004192872116,
+            0.8257861635220125
+          ]
+        },
+        {
+          "frame": 0.31666666666666665,
+          "value": 55
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": 55
+        }
+      ]
+    }
+  },
+  "events": []
+}
