@@ -1,5 +1,9 @@
 {
   "ver": "2.1.0",
+<<<<<<< HEAD
   "uuid": "ace26be0-fc73-45d4-b50c-7d585afb8eb4",
+=======
+  "uuid": "9e40b0fb-5292-431f-92b4-44d42fff303f",
+>>>>>>> feature/ExerciseDay2
   "subMetas": {}
 }
