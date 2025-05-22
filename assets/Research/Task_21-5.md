@@ -26,6 +26,16 @@ Dùng khi làm Game 2D thông thường, UI, icon. Khi không cần giữ nét t
 ### Trilinear
 Giống Bilinear nhưng phức tạp hơn: dùng nhiều cấp ảnh nhỏ hơn gọi là mipmap và trộn giữa chúng khi ảnh ở xa.-> Ảnh hiển thị **mịn và đều** khi camera **zoom xa/gần** hoặc trong **không gian 3D**. Dùng trong Game 3D, hoặc game có camera phóng xa gần liên tục. Khi dùng Gen Mipmap kèm theo.
 ### Premultiply Alpha
+Premultiply Alpha là một kỹ thuật trong xử lý đồ họa mà giá trị màu RGB của từng pixel được nhân trước với độ trong suốt (Alpha) trước khi lưu hoặc hiển thị hình ảnh.
+
+Cách hoạt động:
+| Giai đoạn           | Khi có Premultiply Alpha (PMA)                |
+|---------------------|------------------------------------------------|
+| Trước khi lưu ảnh    | RGB được nhân với Alpha                      |
+| Khi blend (pha màu)  | Dùng công thức tối ưu, hiển thị mượt hơn     |
+| Khi scale ảnh        | Màu sắc nội suy chính xác hơn                |
+| Kết quả              | Không viền sáng, không lem màu, blend đẹp hơn |
+
 # Task 2 make a small research about Auto Atlas.
 Auto Atlas là một tính năng tự động tạo Texture Atlas – tức là gom nhiều hình ảnh nhỏ (như icon, nhân vật, button, background...) lại thành một ảnh lớn duy nhất.
 
