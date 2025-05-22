@@ -4,10 +4,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        soundBGM: {
-            type: cc.AudioClip,
-            default: null
-        },
+        
         soundClick: {
             type: cc.AudioClip,
             default: null
@@ -39,13 +36,10 @@ cc.Class({
     
     },
 
-    playBGM(){
-        console.log("play BGM");
-        //this.current = cc.audioEngine.play(this.soundBGM, false, 0.2);
-    },
+
     playSoundClick(){
         console.log("play after click");
-        cc.audioEngine.play(this.soundClick, false, 1);
+        cc.audioEngine.play(this.soundClick, false, true);
     }
 
     // update (dt) {},
