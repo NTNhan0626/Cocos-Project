@@ -11,25 +11,16 @@ cc.Class({
             default: null
         },
     },
-
     showPopupSetting(){
         this.popupSetting.show();
     },
-
     showPopupRank(){
         this.popupRank.show();
     },
-
     hidePopupSetting(){
         this.popupSetting.hide();
     },
-
     hidePopupRank(){
         this.popupRank.hide();
     }
-    
-
-
-
-
 });

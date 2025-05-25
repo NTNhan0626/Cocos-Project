@@ -2,17 +2,7 @@
 cc.Class({
     extends: require('PopupItem'),
 
-    properties: {
-        
-    },
-
-    updateBGM(){
-
-    },
-    updateSFX(){
-
-    },
-
+    properties: {},
     show(){
         this._super();
     }

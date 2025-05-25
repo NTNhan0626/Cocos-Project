@@ -1,10 +1,6 @@
 cc.Class({
     extends: cc.Component,
-
-    properties: {
-
-    },
-
+    properties: {},
     onLoad(){
         this.hide();
     },

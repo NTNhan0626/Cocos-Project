@@ -6,20 +6,13 @@ cc.Class({
         type:require('PopupController'),
         default:null
        },
-
-      
-
     },
-    onLoad(){
-        
-    },
-   
     showSetting(){
         this.popupController.showPopupSetting();
+        this.popupController.hidePopupRank();
     },
     showRank(){
         this.popupController.showPopupRank();
+        this.popupController.hidePopupSetting();
     }
-
-
 });
