@@ -6,10 +6,14 @@ cc.Class({
         type:require('PopupController'),
         default:null
        },
+
       
 
     },
-
+    onLoad(){
+        
+    },
+   
     showSetting(){
         this.popupController.showPopupSetting();
     },
