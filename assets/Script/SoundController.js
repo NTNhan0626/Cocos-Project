@@ -17,7 +17,6 @@ cc.Class({
             type: cc.Slider,
             default: null
         },
-
         soundVFX: {
             type: cc.AudioClip,
             default: null
@@ -30,10 +29,7 @@ cc.Class({
             type: cc.Slider,
             default: null
         },
-
-
     },
-
     onLoad() {
         this.init();
         this.onSliderBGMChange();
@@ -56,7 +52,6 @@ cc.Class({
     playBGM() {
         cc.audioEngine.playMusic(this.soundBGM, true);
     },
-
     onSliderBGMChange() {
         let volume = this.sliderSoundBGM.progress;
         this.backGroundSliderBGM.width = volume * this.sliderSoundBGM.node.width;
@@ -89,15 +84,12 @@ cc.Class({
             this.sliderSoundBGM.progress = 0;
         }
     },
-
     playSoundVFX() {
-
         cc.audioEngine.playEffect(this.soundVFX, false);
     },
     onSliderVFXChange() {
         let volume = this.sliderSoundVFX.progress;
         this.backGroundSliderVFX.width = volume * this.sliderSoundVFX.node.width;
-        
     },
     onSliderVFXEnd() {
         let volume = this.sliderSoundVFX.progress;
@@ -111,7 +103,6 @@ cc.Class({
             this.toggleVFX.checkMark.node.active = true;
         }
     },
-
     onToggleVFXChanged() {
         if (this.toggleVFX.isChecked) {
             this.toggleVFX.target.active = false;
@@ -121,15 +112,12 @@ cc.Class({
             cc.audioEngine.playEffect(this.soundVFX, false);
             this.backGroundSliderVFX.width = this.volumeDefault * this.sliderSoundVFX.node.width;
             this.sliderSoundVFX.progress = this.volumeDefault;
-
         } else {
             this.toggleVFX.target.active = true;
             this.toggleVFX.checkMark.node.active = false;
 
-            // cc.audioEngine.stopEffect();
             this.backGroundSliderVFX.width = 0;
             this.sliderSoundVFX.progress = 0;
         }
     }
-
 });
