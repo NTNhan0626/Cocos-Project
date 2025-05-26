@@ -31,6 +31,7 @@ cc.Class({
             let cellComponent = cell.getComponent("Cell"); 
             cellComponent.init(data); 
             this.table.addChild(cell);
+            // hàm này nên trả 1 danh sách prefab cho hàm show dùng 
         });
     },
 });

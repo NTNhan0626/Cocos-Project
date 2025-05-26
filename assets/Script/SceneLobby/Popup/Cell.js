@@ -29,6 +29,7 @@ cc.Class({
     },
 
     init(data){
+        // nên để 1 cục rồi active nếu đúng rank
         let topRank = this.node.getChildByName("Toprank");
         if(data.top === 1){
             const sprite = topRank.getComponent(cc.Sprite);
