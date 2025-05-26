@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "17caf175-1bca-408b-8f9e-f8884c36b59d",
+  "uuid": "6df1edcd-1215-4d21-b69c-20385bda3f83",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "Title_Ribbon_01_Blue": {
       "ver": "1.0.4",
-      "uuid": "86475bcd-8fdb-452c-9ab4-be7083bb1616",
-      "rawTextureUuid": "17caf175-1bca-408b-8f9e-f8884c36b59d",
+      "uuid": "1022ef8c-7692-412b-a1e0-57ce4c72c66e",
+      "rawTextureUuid": "6df1edcd-1215-4d21-b69c-20385bda3f83",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
