@@ -10,7 +10,8 @@ cc.Class({
         popupRank: {
             type: require('PopupItem'),
             default: null
-        },
+        }, 
+        scrollView: cc.ScrollView,
     },
     onLoad(){
         this.registerEvents();
@@ -28,13 +29,14 @@ cc.Class({
     showPopupSetting(){
         this.popupSetting.show();
     },
-    showPopupRank(){
+    showPopupRank() {
+        this.scrollView.scrollToTop(0);
         this.popupRank.show();
     },
-    hidePopupSetting(){
+    hidePopupSetting() {
         this.popupSetting.hide();
     },
-    hidePopupRank(){
+    hidePopupRank() {
         this.popupRank.hide();
     }
     
