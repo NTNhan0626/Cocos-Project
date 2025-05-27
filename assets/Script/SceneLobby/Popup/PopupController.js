@@ -1,3 +1,4 @@
+const Emitter = require('Emitter');
 cc.Class({
     extends: cc.Component,
 
@@ -11,6 +12,19 @@ cc.Class({
             default: null
         },
     },
+    onLoad(){
+        this.registerEvents();
+    },
+    registerEvents(){
+        Emitter.instance.registerEvent("showSetting",()=>{
+            this.showPopupSetting();
+            this.hidePopupRank();
+        });
+        Emitter.instance.registerEvent("showRank",()=>{
+            this.showPopupRank();
+            this.hidePopupSetting();
+        });
+    },
     showPopupSetting(){
         this.popupSetting.show();
     },
@@ -23,4 +37,5 @@ cc.Class({
     hidePopupRank(){
         this.popupRank.hide();
     }
+    
 });
