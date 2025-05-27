@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "20d99966-ed68-4f6f-8fb2-d65ec7eb98cd",
+  "uuid": "d2267c75-2921-407a-81e6-a65ed33f4a87",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "Popup_02_White_DecoBorder": {
       "ver": "1.0.4",
-      "uuid": "68ae4879-5918-4f7e-9900-24ca70ce3089",
-      "rawTextureUuid": "20d99966-ed68-4f6f-8fb2-d65ec7eb98cd",
+      "uuid": "e6803bc4-c00d-4ca4-bd34-05b52f1d1b61",
+      "rawTextureUuid": "d2267c75-2921-407a-81e6-a65ed33f4a87",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "71efbd94-5bec-4e60-b175-e9346a85d74b",
+  "uuid": "8a2913be-c6df-431e-a182-1e1ba1d90e2d",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "Label_Flag_01_Single_Red": {
       "ver": "1.0.4",
-      "uuid": "f1383486-4296-4d4b-9b8f-3fca374c1ccd",
-      "rawTextureUuid": "71efbd94-5bec-4e60-b175-e9346a85d74b",
+      "uuid": "b9157a04-5e14-4185-9e6b-0f98b0d3356a",
+      "rawTextureUuid": "8a2913be-c6df-431e-a182-1e1ba1d90e2d",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
