@@ -192,7 +192,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 380.0475852654845
+      "z": 378.44687689621
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -4286,7 +4286,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "b6a28393-c0fd-4777-a2b5-7ee20d4a2642"
+      "__uuid__": "47004981-392e-44ea-a686-aa5792dae945"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -4305,7 +4305,6 @@
   {
     "__type__": "cc.Node",
     "_name": "ScrollView",
-
     "_objFlags": 0,
     "_parent": {
       "__id__": 77
@@ -4371,7 +4370,6 @@
   {
     "__type__": "cc.Node",
     "_name": "Table",
-
     "_objFlags": 0,
     "_parent": {
       "__id__": 95
@@ -4498,7 +4496,6 @@
       }
     ],
     "_spriteFrame": null,
-
     "_type": 0,
     "_segments": 64,
     "_N$alphaThreshold": 0,
