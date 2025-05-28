@@ -1,3 +1,4 @@
+const Emitter = require('Emitter');
 cc.Class({
     extends: cc.Component,
 
@@ -12,7 +13,20 @@ cc.Class({
         }, 
         scrollView: cc.ScrollView,
     },
-    showPopupSetting() {
+    onLoad(){
+        this.registerEvents();
+    },
+    registerEvents(){
+        Emitter.instance.registerEvent("showSetting",()=>{
+            this.showPopupSetting();
+            this.hidePopupRank();
+        });
+        Emitter.instance.registerEvent("showRank",()=>{
+            this.showPopupRank();
+            this.hidePopupSetting();
+        });
+    },
+    showPopupSetting(){
         this.popupSetting.show();
     },
     showPopupRank() {
@@ -25,4 +39,5 @@ cc.Class({
     hidePopupRank() {
         this.popupRank.hide();
     }
+    
 });
