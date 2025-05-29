@@ -11,6 +11,10 @@ cc.Class({
             type:cc.Button,
             default:null
         },
+        buttonSwitchScene:{
+            type:cc.Button,
+            default:null
+        }
     },
     onLoad(){
         this.init();
@@ -24,6 +28,10 @@ cc.Class({
     },
     showRank(){
         Emitter.instance.emit("showRank");
-       
+    },
+    switchScene(event,sceneName){
+        cc.sys.localStorage.setItem('nextScene',sceneName);
+        cc.director.loadScene("Loading");
+        
     }
 });
