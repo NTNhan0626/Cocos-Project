@@ -17,7 +17,7 @@ cc.Class({
     onLoad() {
         this.init();
         cc.director.getCollisionManager().enabled = true;
-        cc.director.getCollisionManager().enabledDebugDraw = true;
+        cc.director.getCollisionManager().enabledDebugDraw = false;
     },
     init(){
         this.spawnedCount = 0;
