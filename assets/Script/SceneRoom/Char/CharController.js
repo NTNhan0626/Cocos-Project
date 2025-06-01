@@ -1,3 +1,6 @@
+const Emitter = require('Emitter');
+const EventCode = require('EventCode');
+
 cc.Class({
     extends: cc.Component,
 
@@ -16,8 +19,7 @@ cc.Class({
     },
     onLoad() {
         this.init();
-        cc.director.getCollisionManager().enabled = true;
-        cc.director.getCollisionManager().enabledDebugDraw = false;
+        
     },
     init(){
         this.spawnedCount = 0;
@@ -30,6 +32,7 @@ cc.Class({
         let prefab = Math.random() < 0.5 ? this.dod : this.wolf;
         let enemy = cc.instantiate(prefab);
         this.charList.addChild(enemy);
+        Emitter.instance.emit(EventCode.CREATE_ENEMI);
 
         this.spawnedCount++;
         let nextDelay = Math.random() * 2.5 + 0.5;

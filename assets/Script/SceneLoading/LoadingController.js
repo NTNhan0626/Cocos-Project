@@ -26,19 +26,22 @@ cc.Class({
         }, 0.3)
     },
     switchScene(sceneName) {
+        let oldProgress = 0;
         cc.director.preloadScene(sceneName, (completedCount, totalCount) => {
             let progress = completedCount / totalCount;
+
+            progress = progress >= oldProgress ? progress : oldProgress;
+
+            oldProgress = progress;
             this.progressLoading.progress = progress;
-
-
             console.log(completedCount / totalCount);
         }, (error) => {
             if (!error) {
-               this.unscheduleAllCallbacks();
-               cc.director.loadScene(sceneName);
-               console.log("load ok", sceneName);
-               cc.sys.localStorage.removeItem("nextScene");
-               
+                this.unscheduleAllCallbacks();
+                cc.director.loadScene(sceneName);
+                console.log("load ok", sceneName);
+                cc.sys.localStorage.removeItem("nextScene");
+
             } else {
                 cc.log(error);
             }

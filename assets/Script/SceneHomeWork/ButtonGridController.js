@@ -11,9 +11,7 @@ cc.Class({
             default: null
         },
     },
-
     setButtonGridData(listAnimationName) {
-        
         listAnimationName.forEach((animationName,index) => {
             let button = cc.instantiate(this.button);
             this.node.addChild(button);
