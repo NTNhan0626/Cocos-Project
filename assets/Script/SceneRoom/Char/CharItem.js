@@ -10,17 +10,20 @@ cc.Class({
             default: 200
         }
     },
+   
+    
     init() {
-        const canvas = cc.director.getScene().getChildByName('Canvas');
-        let startX = canvas.width / 2 + this.node.width / 2 + 50;
+        const sceneSize = cc.winSize;
+        let startX = sceneSize.width / 2 + this.node.width / 2 + 50;
         let startY = Math.floor(Math.random() * 221) - 220;
         this.startPosition = new cc.Vec2(startX, startY);
         this.node.position = this.startPosition;
 
-        let targetX = -(canvas.width / 2 + this.node.width / 2);
+        let targetX = -(sceneSize.width / 2 + this.node.width / 2);
         let targetY = startY;
         this.targetPosition = new cc.Vec2(targetX, targetY);
         console.log(this.targetPosition);
+        this.onMove(this.targetPosition);
     },
     onMove(targetPosition) {
         const deltaX = targetPosition.x - this.node.x;
@@ -38,20 +41,17 @@ cc.Class({
             .repeatForever()
             .start();
     },
-    onDie(point) {
+    onDie(gold) {
         cc.tween(this.node)
-            .by(0.2, { scale: 0.2 })
+            .by(0.2, { scale: 0.2 }) 
             .call(() => {
                 this.node.color = cc.Color.RED;
-                this.scheduleOnce(() => {
-                    Emitter.instance.emit(EventCode.UPDATEPOINT, point)
-                    this.node.destroy();
-                }, 0.2);
-
+            })
+            .delay(0.2) 
+            .call(() => {
+                Emitter.instance.emit(EventCode.UPDATE_GOLD, gold);
+                this.node.destroy();
             })
             .start();
-    },
-    onDestroy() {
-
     }
 });

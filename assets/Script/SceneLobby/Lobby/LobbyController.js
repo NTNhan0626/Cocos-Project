@@ -1,4 +1,5 @@
 const Emitter = require('Emitter');
+const EventCode = require('EventCode');
 cc.Class({
     extends: cc.Component,
 
@@ -24,14 +25,13 @@ cc.Class({
         this.buttonRank.node.on('click',this.showRank,this);
     },
     showSetting(){
-        Emitter.instance.emit("showSetting");
+        Emitter.instance.emit(EventCode.SHOW_SETTING);
     },
     showRank(){
-        Emitter.instance.emit("showRank");
+        Emitter.instance.emit(EventCode.SHOW_RANK);
     },
     switchScene(event,sceneName){
         cc.sys.localStorage.setItem('nextScene',sceneName);
         cc.director.loadScene("Loading");
-        
     }
 });
