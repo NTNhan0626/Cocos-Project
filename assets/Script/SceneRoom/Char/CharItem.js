@@ -8,18 +8,25 @@ cc.Class({
         speed: {
             type: cc.Integer,
             default: 200
+        },
+        positionStartY:{
+            type: [cc.Integer],
+            default:[]
         }
+        
     },
    
     
     init() {
+        this.positionStartY = [130, 320, 510];
         const sceneSize = cc.winSize;
-        let startX = sceneSize.width / 2 + this.node.width / 2 + 50;
-        let startY = Math.floor(Math.random() * 221) - 220;
+        let startX = this.node.width / 2 + 50;
+        let startY = this.positionStartY[Math.floor(Math.random() * 3)];
+
         this.startPosition = new cc.Vec2(startX, startY);
         this.node.position = this.startPosition;
 
-        let targetX = -(sceneSize.width / 2 + this.node.width / 2);
+        let targetX = -(sceneSize.width + this.node.width / 2);
         let targetY = startY;
         this.targetPosition = new cc.Vec2(targetX, targetY);
         console.log(this.targetPosition);
@@ -42,12 +49,13 @@ cc.Class({
             .start();
     },
     onDie(gold) {
+        this.node.stopAllActions();
         cc.tween(this.node)
             .by(0.2, { scale: 0.2 }) 
             .call(() => {
                 this.node.color = cc.Color.RED;
             })
-            .delay(0.2) 
+            .delay(0.1) 
             .call(() => {
                 Emitter.instance.emit(EventCode.UPDATE_GOLD, gold);
                 this.node.destroy();

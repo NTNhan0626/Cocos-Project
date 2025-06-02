@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Wolf",
+    "_name": "Bullet",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -43,8 +43,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256,
-      "height": 193
+      "width": 50,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -53,8 +53,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 405.242,
-      "y": 213.476,
+      "x": 100,
+      "y": 320,
       "z": 0
     },
     "_scale": {
@@ -72,7 +72,7 @@
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
-    "groupIndex": 3,
+    "groupIndex": 4,
     "_id": ""
   },
   {
@@ -91,10 +91,10 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "78d62d6d-7c3b-4bc9-92ec-a549607d2a28"
+      "__uuid__": "d08acb3b-44e3-4b50-88b0-efd1f62890f5"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -108,19 +108,7 @@
     "_id": ""
   },
   {
-    "__type__": "7d638uK2glIIZ5JAruNF0bw",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "speed": 400,
-    "positionStartY": [],
-    "_id": ""
-  },
-  {
-    "__type__": "cc.BoxCollider",
+    "__type__": "cc.CircleCollider",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -133,11 +121,18 @@
       "x": 0,
       "y": 0
     },
-    "_size": {
-      "__type__": "cc.Size",
-      "width": 256,
-      "height": 193
+    "_radius": 25.1,
+    "_id": ""
+  },
+  {
+    "__type__": "36b56ZKLfpEv5kfwxFPqHL0",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
     },
+    "_enabled": true,
+    "speed": 300,
     "_id": ""
   },
   {
@@ -146,9 +141,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "9aa1b1d9-f5f3-430a-8cdc-0700ea14ac0c"
+      "__uuid__": "cc98d925-b1aa-4318-978f-d09ab2210d50"
     },
-    "fileId": "bfztcMNDBNp6TJ/uLXKJn9",
+    "fileId": "0f7cPZVylAMLmWZaOSltTv",
     "sync": false
   }
 ]
