@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Dog",
+    "_name": "Bullet",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -37,14 +37,14 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 255,
-      "b": 255,
+      "g": 0,
+      "b": 0,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 232,
-      "height": 193
+      "width": 40,
+      "height": 40
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -53,14 +53,14 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
+      "x": 100,
+      "y": 320,
       "z": 0
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.8,
-      "y": 0.8,
+      "x": 1,
+      "y": 1,
       "z": 1
     },
     "_eulerAngles": {
@@ -72,7 +72,7 @@
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
-    "groupIndex": 1,
+    "groupIndex": 4,
     "_id": ""
   },
   {
@@ -91,10 +91,10 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "3c855c95-3f3a-40e1-b4da-021a1e1f924c"
+      "__uuid__": "c2c587a2-c37a-4382-8626-1a4df069468c"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -108,19 +108,7 @@
     "_id": ""
   },
   {
-    "__type__": "68dc7W1+RBNfp/38x+U6tEz",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "speed": 300,
-    "positionStartY": [],
-    "_id": ""
-  },
-  {
-    "__type__": "cc.BoxCollider",
+    "__type__": "cc.CircleCollider",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -130,14 +118,21 @@
     "tag": 0,
     "_offset": {
       "__type__": "cc.Vec2",
-      "x": 9,
-      "y": -1
+      "x": 0,
+      "y": 0
     },
-    "_size": {
-      "__type__": "cc.Size",
-      "width": 214,
-      "height": 190
+    "_radius": 21,
+    "_id": ""
+  },
+  {
+    "__type__": "36b56ZKLfpEv5kfwxFPqHL0",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
     },
+    "_enabled": true,
+    "speed": 600,
     "_id": ""
   },
   {
@@ -146,9 +141,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "03f53785-90d5-4ccf-b16f-931766b61772"
+      "__uuid__": "cc98d925-b1aa-4318-978f-d09ab2210d50"
     },
-    "fileId": "cdZKKEk1NNu5WLJhodMfhW",
+    "fileId": "0f7cPZVylAMLmWZaOSltTv",
     "sync": false
   }
 ]

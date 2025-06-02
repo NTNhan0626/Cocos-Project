@@ -8,7 +8,13 @@ const EVENTCODE = {
     PLAY_VFX: "playVFX",
     SET_VOLUME_VFX: "setVolumeVFX",
     //scene Room
-    CREATE_ENEMI:"createEnemi"
+    CREATE_ENEMI:"createEnemi",
+    CREATE_BULLET:"createBullet",
+    CHANGE_POSITION:"changePosition",
+    PLAYEFFECT:"playEffect",
+    CLICK_BUTTON:"clickButton",
+    SHORT:"short"
+
 
 }
 module.exports = EVENTCODE;

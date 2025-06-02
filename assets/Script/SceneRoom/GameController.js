@@ -35,7 +35,11 @@ cc.Class({
         this.sumDog++;
         this.dogCount.string = String(this.sumDog);
     },
+    onButtonClick(event,data){
+        Emitter.instance.emit(EventCode.CLICK_BUTTON,data);
+    },
     onDestroy() {
         Emitter.instance.removeEvent(EventCode.UPDATE_GOLD, this.updateGold.bind(this));
     }
+    
 });

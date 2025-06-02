@@ -8,7 +8,8 @@
       false,
       false,
       true,
-      false
+      false,
+      true
     ],
     [
       false,
@@ -18,6 +19,14 @@
     ],
     [
       false,
+      false,
+      true,
+      false,
+      true
+    ],
+    [
+      false,
+      true,
       false,
       true,
       false
@@ -42,7 +51,8 @@
     "default",
     "Dog",
     "Rock",
-    "Wolf"
+    "Wolf",
+    "Bullet"
   ],
   "last-module-event-record-time": 1747638723913,
   "simulator-orientation": false,
