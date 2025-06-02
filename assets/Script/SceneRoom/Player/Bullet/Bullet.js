@@ -32,7 +32,7 @@ cc.Class({
         this.onMove(targetPosition);
     },
     onMove(targetPosition) {
-        const deltaX = targetPosition.x - this.node.x;
+        const deltaX = targetPosition.x;
         const time = Math.abs(deltaX / this.speed);
 
         cc.tween(this.node)

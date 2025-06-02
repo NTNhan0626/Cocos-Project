@@ -10,7 +10,10 @@ const EVENTCODE = {
     //scene Room
     CREATE_ENEMI:"createEnemi",
     CREATE_BULLET:"createBullet",
-    PLAYEFFECT:"playEffect"
+    CHANGE_POSITION:"changePosition",
+    PLAYEFFECT:"playEffect",
+    CLICK_BUTTON:"clickButton",
+    SHORT:"short"
 
 
 }
