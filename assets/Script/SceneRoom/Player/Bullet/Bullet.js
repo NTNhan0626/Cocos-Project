@@ -8,6 +8,10 @@ cc.Class({
             type: cc.Integer,
             default: 300
         },
+        dame:{
+            type: cc.Integer,
+            default: 100
+        }
     },
 
     onLoad() {
@@ -50,10 +54,12 @@ cc.Class({
         let gold = 0;
         if (other.node.group === "Dog") {
             gold = 1;
-            other.node.getComponent("CharDog").onDie(gold);
+            let id = other.node.getComponent("CharDog").id;
+            Emitter.instance.emit(EventCode.HIT_ENEMI,id,this.dame);
         } else if (other.node.group === "Wolf") {
             gold = 2;
-            other.node.getComponent("CharWolf").onDie(gold);
+            let id = other.node.getComponent("CharWolf").id;
+            Emitter.instance.emit(EventCode.HIT_ENEMI,id,this.dame);
         }
     },
     onCollisionStay: function (other, self) {
