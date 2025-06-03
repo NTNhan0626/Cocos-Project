@@ -31,6 +31,9 @@ cc.Class({
         ];
         this.listCell = [];
         this.generateTable(10);
+    },
+    show(){
+        this._super();
         this.showRank(this.listCell);
     },
     generateTable(topLength) {

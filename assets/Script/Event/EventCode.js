@@ -13,7 +13,10 @@ const EVENTCODE = {
     CHANGE_POSITION:"changePosition",
     PLAYEFFECT:"playEffect",
     CLICK_BUTTON:"clickButton",
-    SHORT:"short"
+    SHORT:"short",
+    KILL_ENEMI:"killEnemi",
+    DIE_ENEMI:"dieEnemi",
+    HIT_ENEMI:"hitEnemi"
 
 
 }

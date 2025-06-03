@@ -34,12 +34,6 @@ cc.Class({
             default: null
         }
     },
-
-    onLoad() {
-        this._super();
-        this.init();
-    },
-
     init() {
         this.enableBGM = true;
         Emitter.instance.emit(EventCode.ENABLE_BGM,this.enableBGM);
@@ -56,7 +50,6 @@ cc.Class({
         handleNode.node.on(cc.Node.EventType.TOUCH_END, this.onSliderVFXEnd, this);
         handleNode.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onSliderVFXEnd, this);
     },
-
     onToggleBGMChanged() {
         if (this.toggleBGM.isChecked) {
             this.toggleBGM.target.active = false;
@@ -133,8 +126,8 @@ cc.Class({
             this.sliderSoundVFX.progress = 0;
         }
     },
-
     show() {
         this._super();
+        this.init();
     }
 });
